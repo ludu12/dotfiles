@@ -1,8 +1,8 @@
-today=`date +%Y-%m-%d` 
+today=`date +%Y-%m-%d`
 
-if [[ ! -e ~/Logs/$today.log ]]; then
-    mkdir -p ~/Logs
-    touch ~/Logs/$today.log
+if [[ ! -e ~/Documents/Logs/$today.log ]]; then
+    mkdir -p ~/Documents/Logs
+    touch ~/Documents/Logs/$today.log
 fi
 
-vi ~/Logs/$today.log
+vi ~/Documents/Logs/$today.log
