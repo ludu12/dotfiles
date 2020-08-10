@@ -63,3 +63,4 @@ alias gs="git status"
 alias gas="git add -A && git status"
 
 alias dup="open . -a iterm"
+alias vimlog="~/logger.sh"
