@@ -1,13 +1,11 @@
 today=`date +%Y-%m-%d`
 
-path='~/Documents/Logs'
-
-if [[ ! -e $path/$today.log ]]; then
-    mkdir -p $path
-    touch $path/$today.log
+if [[ ! -e ~/Documents/Logs/$today.log ]]; then
+    mkdir -p ~/Documents/Logs
+    touch ~/Documents/Logs/$today.log
 fi
 
 time=`date +%T`
-echo "$time - " >> $path/$today.log
-vi + $path/$today.log
+echo "$time - " >> ~/Documents/Logs/$today.log
+vi + ~/Documents/Logs/$today.log
  
