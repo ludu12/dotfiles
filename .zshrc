@@ -57,6 +57,18 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Pandoc slideshow. Expects markdown as input
+function slideshow() {
+  file=${1}
+  extension="${file##*.}"
+  filename="${file%.*}"
+  if [[ "$extension" != "md" ]]; then
+    echo "ERROR: Input must be .md file"
+    return;
+  fi
+
+  pandoc -t revealjs -s -o "$filename.html" "$file" -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+}
 
 # Aliases
 alias gs="git status"
