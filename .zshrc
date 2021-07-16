@@ -73,6 +73,8 @@ function slideshow() {
 # Aliases
 alias gs="git status"
 alias gas="git add -A && git status"
+alias gup="git pull --rebase"
+alias grip="git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d"
 
 alias dup="open . -a iterm"
 alias vimlog="~/logger.sh"
