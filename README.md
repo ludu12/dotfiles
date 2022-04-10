@@ -1,10 +1,27 @@
 # dotfiles 
 The dotfiles that I use in my development environment
 
-### Getting started
+## Installing apps
+
+Only run this once when setting up apps
+
+```
+xcode-select --install
+# Follow instructions...
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# Follow instructions...
+
+# Then run
+brew bundle -v 
+```
+
+
+## Linking Files 
 Run:
 ```
 ./bootstrap.sh
 ```
 
-This will create symlinks of the dotfiles in this repo to your home directory. You should only have to run this once unless adding new files.
+This will create symlinks of the dotfiles in this repo to your home directory. Run this command again if editing/adding files.
+
