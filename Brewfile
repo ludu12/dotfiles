@@ -1,4 +1,4 @@
-tap "caskroom/cask"
+tap "homebrew/cask"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
