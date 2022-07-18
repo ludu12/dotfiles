@@ -48,7 +48,7 @@ function slideshow() {
     return;
   fi
 
-  pandoc -t revealjs -s -o "$filename.html" "$file" -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+  pandoc -t revealjs -s -o "$filename.html" "$file"
 }
 
 # Aliases
