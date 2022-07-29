@@ -8,4 +8,4 @@ fi
 time=`date +%T`
 echo "$time - " >> ~/Documents/Logs/$today.log
 vi + ~/Documents/Logs/$today.log
- 
+

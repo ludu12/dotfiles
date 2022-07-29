@@ -16,6 +16,13 @@ xcode-select --install
 brew bundle -v 
 ```
 
+## Other config
+
+```
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install
+```
+
 
 ## Linking Files 
 Run:
