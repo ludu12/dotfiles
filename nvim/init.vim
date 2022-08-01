@@ -20,6 +20,7 @@ Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
+lua require('config')
 
 " Show line numbers
 set number
