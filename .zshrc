@@ -30,6 +30,8 @@ newRandomEmoji
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+source $(brew --prefix autoenv)/activate.sh
+
 
 # ANDROID
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -59,6 +61,7 @@ alias grip="git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs g
 
 alias dup="open . -a iterm"
 alias vimlog="~/logger.sh"
+alias mileage="~/milage/.sh"
 
 alias vi="nvim"
 alias vim="nvim"

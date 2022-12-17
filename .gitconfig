@@ -1,9 +1,5 @@
+[includeIf "gitdir:~/src/"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/src/johndeere/"]
+  path = ~/.gitconfig-deere
 
-[user]
-	name = Luke Dunscombe
-	email = dunscombe1@gmail.com
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process

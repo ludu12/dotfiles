@@ -13,6 +13,7 @@ brew "neovim"
 brew "zsh"
 brew "fzf"
 brew "ripgrep"
+brew "moreutils"
 
 cask "bitwarden"
 cask "datagrip"
