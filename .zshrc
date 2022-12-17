@@ -61,7 +61,7 @@ alias grip="git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs g
 
 alias dup="open . -a iterm"
 alias vimlog="~/logger.sh"
-alias mileage="~/milage/.sh"
+alias mileage="~/mileage.sh"
 
 alias vi="nvim"
 alias vim="nvim"
