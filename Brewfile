@@ -14,6 +14,7 @@ brew "zsh"
 brew "fzf"
 brew "ripgrep"
 brew "moreutils"
+brew "pyenv"
 
 cask "bitwarden"
 cask "datagrip"
