@@ -57,7 +57,7 @@ function slideshow() {
 alias gs="git status"
 alias gas="git add -A && git status"
 alias gup="git pull --rebase"
-alias grip="git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
+#alias grip="git branch -d $(git branch --merged |tail -n +2)"
 
 alias dup="open . -a iterm"
 alias vimlog="~/logger.sh"
@@ -71,3 +71,6 @@ alias vim="nvim"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
