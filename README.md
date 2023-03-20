@@ -23,6 +23,11 @@ brew bundle -v
 $(brew --prefix)/opt/fzf/install
 ```
 
+```
+# To install oh my zsh:
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
 
 ## Linking Files 
 Run:
