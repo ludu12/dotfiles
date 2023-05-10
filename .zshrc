@@ -57,7 +57,7 @@ function slideshow() {
 alias gs="git status"
 alias gas="git add -A && git status"
 alias gup="git pull --rebase"
-#alias grip="git branch -d $(git branch --merged |tail -n +2)"
+alias grip="git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do git branch -D $branch; done"
 
 alias dup="open . -a iterm"
 alias vimlog="~/logger.sh"
