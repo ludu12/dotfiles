@@ -24,16 +24,6 @@ return require('packer').startup(function(use)
     use("nvim-treesitter/nvim-treesitter-context");
 
     use {
-        'nvim-tree/nvim-tree.lua',
-        requires = {
-            'nvim-tree/nvim-web-devicons', -- optional
-        },
-        config = function()
-            require("nvim-tree").setup {}
-        end
-    }
-
-    use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
         requires = {
