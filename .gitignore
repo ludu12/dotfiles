@@ -36,3 +36,8 @@ Session.vim
 
 # eslint
 .eslintcache
+
+plugin/packer_complied.lua
+
+.config/nvim/iterm2
+.config/jgit/
