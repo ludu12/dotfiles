@@ -8,7 +8,7 @@ link () {
 		for file in $( ls -A | grep -vE 'bootstrap.sh|\.git$|\.idea$|init.vim|.*.md' ) ; do
 			ln -sfnv "$PWD/$file" "$HOME"
 		done
-    ln -sfnv "$PWD/.config" "$HOME/.config"
+    ln -sfnv "$PWD/.config/nvim" "$HOME/.config/nvim"
 		echo "$PROMPT Symlinking complete"
 	else
 		echo "$PROMPT Symlinking cancelled by user"
